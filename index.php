@@ -1,3 +1,24 @@
+<?php
+
+if (isset($_POST['submit'])){
+
+    $name=$_POST['name'];
+    $email=$_POST['email'];
+    $subject=$_POST['subject'];
+    $namessageme=$_POST['message'];
+
+
+    echo $name,$email,$subject,$namessageme;
+
+    echo 'yes';
+
+}
+
+
+
+?> 
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -537,13 +558,13 @@
               <h3><i class="bi bi-award me-2"></i>Certifications</h3>
 
               <div class="resume-item">
-                <h4>AWS Certified Solutions Architect - Professional</h4>
-                <h5>2023</h5>
+                <h4>Certrified Web Developer - Interns Pakistan</h4>
+                <h5>2021</h5>
               </div>
 
               <div class="resume-item">
-                <h4>Google Cloud Professional Architect</h4>
-                <h5>2022</h5>
+                <h4>IEEE Certification in Web Development</h4>
+                <h5>2021</h5>
               </div>
             </div>
           </div>
@@ -648,13 +669,13 @@
 
                 <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-photography">
                   <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-5.webp" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <img src="assets/img/portfolio/project1-5.png" class="img-fluid" alt="Portfolio Image" loading="lazy">
                     <div class="portfolio-info">
                       <div class="content">
-                        <span class="category">Photography</span>
-                        <h4>Urban Stories</h4>
+                        <span class="category">Dastak</span>
+                        <h4>Dastak Doorstep Services</h4>
                         <div class="portfolio-links">
-                          <a href="assets/img/portfolio/portfolio-5.webp" class="glightbox" title="Urban Stories"><i class="bi bi-plus-lg"></i></a>
+                          <a href="assets/img/portfolio/project1-5.png" class="glightbox" title="Urban Stories"><i class="bi bi-plus-lg"></i></a>
                           <a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
                         </div>
                       </div>
@@ -664,11 +685,11 @@
 
                 <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-design">
                   <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-6.webp" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <img src="assets/img/portfolio/project1-6.png" class="img-fluid" alt="Portfolio Image" loading="lazy">
                     <div class="portfolio-info">
                       <div class="content">
-                        <span class="category">Web Design</span>
-                        <h4>Digital Experience</h4>
+                        <span class="category">Certifications</span>
+                        <h4>Global IT Certifictons</h4>
                         <div class="portfolio-links">
                           <a href="assets/img/portfolio/portfolio-6.webp" class="glightbox" title="Digital Experience"><i class="bi bi-plus-lg"></i></a>
                           <a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
@@ -1021,7 +1042,7 @@
               <h3>Get In Touch</h3>
               <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.</p>
 
-              <form action="forms/contact.php" method="post" class="php-email-form">
+              <form action="index.php" method="POST" class="php-email-form">
                 <div class="row gy-4">
 
                   <div class="col-md-6">
